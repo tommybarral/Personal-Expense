@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../model/transaction.dart';
 import 'package:intl/intl.dart';
+import '../model/transaction.dart';
 
 class TransactionList extends StatelessWidget {
 
