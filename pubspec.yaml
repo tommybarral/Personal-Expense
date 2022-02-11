@@ -15,6 +15,7 @@ dependencies:
 # add different packages here like image_picker or http or anything else.
 # ajout des différents paquet ici comme image_picker ou http ou n'importe quoi d'autre.
   cupertino_icons: ^1.0.2
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:

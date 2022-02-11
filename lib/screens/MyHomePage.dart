@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../model/transaction.dart';
+import 'package:intl/intl.dart';
 
 
 class MyHomePage extends StatelessWidget {
@@ -47,14 +48,14 @@ class MyHomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(tx.title, style: TextStyle( fontSize: 20, fontWeight: FontWeight.bold),),
-                        Text(tx.date.toString(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.w900, color: Colors.grey),),
+                        Text(DateFormat.yMMMMEEEEd().format(tx.date), style: TextStyle(fontSize: 14, fontWeight: FontWeight.w900, color: Colors.grey),),
                       ],
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(border: Border.all(color: Colors.purple, width: 2),),
-                      child: Text(tx.amount.toString() + ' €', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.purple),),
+                      child: Text('${tx.amount.toString()} €', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.purple),),
                     ),
                   ],
                 ),
